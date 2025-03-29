@@ -16,6 +16,18 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>LWPLABS</finalName>
+    <finalName>${project.artifactId)-s(project.version)</finalName>
+<plugins> 
+<plugin>
+<groupId>org.apache.tomcat.maven</groupId> 
+<artifactId>tomcat7-naven-plugin</artifactId> 
+ <version>2.2</version>
+<configurations
+ <path>/$(project.artifactId)##s(project.version)</path> <url>http://localhost:8080/manager/text</url>
+<username>admin</username>
+ </configuration>
+ </plugin>
+ </plugins>
+</build
   </build>
 </project>
